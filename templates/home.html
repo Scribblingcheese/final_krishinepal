@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+
+    <!-- site metas -->
+    <title>Agricultural Board</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+    <!-- bootstrap css -->
+   
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   
+    
+    
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    
+    <style>
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+* {
+     box-sizing: border-box !important;
+     transition: ease all 0.5s;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+      font-family: poppins;
+     line-height: 1.80857;
+     font-weight: normal;
+     overflow-x: hidden;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px
+}
+
+h2 {
+     font-size: 22px
+}
+
+h3 {
+     font-size: 18px
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+        .header {
+        font-family: poppins;
+        padding: 10px 0px;
+        background: #052501;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    background-position: center center;
+    }
+
+        .logo {
+        float: left;
+        position: relative;
+        padding-top: 2px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.location_icon_bottum {
+   
+   position: relative;
+ 
+   background: #090501;
+   margin-left: 31px;
+   top: 0;
+   
+
+    }
+
+    .location_icon_bottum ul li {
+     display: inline-block;
+padding: 0px 10px;
+color: #fff;
+font-size: 15px;
+font-weight: 500;
+}
+
+.location_icon_bottum_tt {
+width: 100%;
+}
+
+.location_icon_bottum_tt ul li {
+     display: inline-block;
+padding: 27px 60px;
+color: #fff;
+font-size: 15px;
+font-weight: 500;
+}
+
+nav.main-menu {
+     float: right;
+     margin-left: 0;
+}
+
+.main-menu {
+     text-align: center;
+     align-items: center;
+     padding:13px 0px;
+}
+
+.main-menu ul {
+   
+     list-style-type: none;
+     
+}
+
+.main-menu ul>li {
+     display: inline-block;
+     position: relative;
+}
+
+.main-menu ul>li a {
+     
+     font-size: 15px;
+     display: block;
+     font-weight: 500;
+     color: #fff;
+     text-align: center;
+}
+
+.banner-main {
+     position: relative;
+     font-family: poppins;
+}
+
+.banner-main img {width: 100%;}
+
+
+.banner-main .carousel-caption span {
+     font-size: 30px;
+     font-weight: bold;
+     color: #4bc714;
+     text-transform: uppercase;
+     padding-bottom: 10px;
+     display: block;
+}
+
+.banner-main .carousel-caption h1 {
+     color: #fff;
+     font-size: 35px;
+     font-weight: bold;
+     padding-bottom: 10px;
+     text-transform: uppercase;
+}
+
+
+
+.banner-main .carousel-caption .buynow  {
+border: #fff solid 1px;
+background: #fff;
+width: 190px;
+padding: 8px 0;
+display: inline-block;
+font-weight: 500;
+font-size: 17px;
+line-height: 30px;
+color: #000;
+text-align: center;
+border-radius: 10px;
+margin-right: 20px;
+}
+
+.banner-main .carousel-caption .buynow:hover {
+     border: #052501 solid 1px;
+     background: #052501;
+     color: #fff;
+}
+ 
+
+.about {
+     padding: 90px 0;
+}
+
+.about .about_img figure {
+     margin: 0px;
+}
+
+.about .about_box {
+     text-align: left;
+     
+}
+
+.about .about_box h2 {
+     font-weight: 500;
+     font-size: 43px;
+     color: #163f03;
+     line-height: 55px;
+     padding-bottom: 7px;
+    display: block;
+    text-transform: uppercase;
+        padding: 0px 0px 6px 0px;
+            border-bottom: #163f03 solid 1px;
+}
+
+.about .about_box p {
+     font-size: 17px;
+     line-height: 33px;
+     color: #4c4a49;
+     padding: 40px 0px;
+     font-weight: 500;
+}
+.about .about_box a {
+         color: #fff;
+    font-size: 17px;
+    line-height: 29px;
+    background: #052501;
+    border: #052501 solid 1px;
+    padding: 12px 40px;
+    display: inline-block;
+    width: 231px;
+text-align: center;
+border-radius: 18px;
+}
+.about .about_box a:hover {
+    color: #fff;
+    background: #4bc714;
+    border: #4bc714 solid 1px;
+}
+
+.copyright {
+     background: #30880d;
+     padding: 20px 0px 20px 0;
+}
+.copyright p {
+     color: #fff;
+     font-size: 16px;
+     text-align: center;
+     text-align: center;
+     margin: 0 auto;
+}
+
+.footer {background: #052501; padding: 90px 0px;}
+
+
+ 
+ ul.loca li {
+    color: #fff;
+padding-bottom: 10px;
+display: flex;
+font-size: 15px;
+flex-wrap: wrap;
+}
+ ul.loca li:last-child {
+    padding-right: 0;
+}
+ ul.loca li a {
+   padding-right: 17px;
+color: #fff;
+margin-top: 2px;
+}
+
+
+
+.footer .address .form-control {
+     padding: 10px 15px;
+     border: #ddd solid 1px;
+     margin-bottom: 20px;
+     box-shadow: inherit;
+     border-radius: 10px;
+}
+ .address  h3 {
+color: #fff;
+font-size: 29px;
+font-weight: 500;
+padding-top: 15px;
+padding-bottom: 3px;
+border-bottom: #3e7f21 solid 4px;
+margin-bottom: 20px;
+width: 226px;
+ }
+.address img {padding-bottom: 10px;}
+
+ .address p {
+     color: #fff;
+     padding-bottom: 20px;
+     font-size: 18px;
+line-height: 30px;}
+ .form-control:focus, .form-control:hover {
+     border: #ddd solid 1px !important;
+}
+ .footer .address .submit-btn {
+   padding: 8px 45px;
+border: #30880d solid 1px;
+background: #30880d;
+color: #fff;
+font-weight: 500;
+font-size: 19px;
+border-radius: 10px;
+}
+ .footer .address .submit-btn:hover {
+     background: #fff;
+     border: #fff solid 1px;
+     color: #30880d;
+}
+
+.relative {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: left;
+     bottom: auto;
+}
+    </style>
+</head>
+<!-- body -->
+
+<body >
+  
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header" id="top">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div >
+
+                            <!-- Logo section -->
+                            <div >
+                                <div class="logo">
+                                    <img src="static/images/logo.png" alt="Logo" height="80px" width="80px">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <!-- Top Right corner -->
+                    <div >
+                        <div class="location_icon_bottum_tt">
+                            <ul>
+                                
+                                <li><img src="static/icon/email1.png" />&nbsp;krishinepal@gmail.com</li>
+
+                                <li><img src="static/icon/call1.png" />(+977)9841654310</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col location_icon_bottum">
+                       <div >
+                            <div >
+                                <div >
+                                    <div >
+                                        <nav class="main-menu">
+                                            <ul >
+                                                <li > <a href="#top">Home</a> </li>
+                                                <li> <a href="#about">About</a> </li>
+                                                <li><a href="http://127.0.0.1:5000/crop_recommendation">Crop Recommendation</a></li>
+                                                <li><a href="http://127.0.0.1:5000/graph">Sensor's Dashboard</a></li>
+                                                <li><a href="http://127.0.0.1:5000/crop_graph">Crop Dashboard</a></li>
+                                                
+
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header inner -->
+    </header>
+    <!-- end header -->
+
+
+    <section>
+        <div class="banner-main">
+    
+            <div>
+                <div>
+                    <img  src="static/images/banner.jpg" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption relative">
+                            <h1>Krishi Nepal</h1>
+                            <span>Agricultural Project</span>
+
+                            
+                            <a class="buynow" href="#about">About us</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- about -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col">
+                    <div class="about_box">
+                        <h2>About Us<br><strong style="color:black;">Krishi Nepal</strong></h2>
+                        <p>Agriculture is an important sector in Nepal's economy, employing over half of the country's workforce and contributing significantly to its GDP. Nepal has a long history of agriculture, with the earliest known evidence of cultivation dating back to the Indus Valley Civilization around 6000 BCE. The country is known for its diverse range of crops, including rice, wheat, sugarcane, cotton, and tea, as well as various fruits and vegetables.<br><br>
+                        
+                        Agriculture also plays an important role in Nepal's cultural and social life, with many festivals and traditions centered around the planting and harvesting of crops. Overall, agriculture is a vital component of Nepal's economy and society, and will continue to be so for the foreseeable future.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about_img">
+                        <figure><img src="static/images/about.png" alt="img" /></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about -->
+
+
+
+    <!--  footer -->
+    <footr>
+        <div class="footer  ">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="address">
+                            <a href="index.html"> <img src="static/images/logo.png" alt="logo" height="150px" width="150px" /></a>
+                            <p>Krishi Nepal<br>Agricultural Project</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="address">
+                            
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="address">
+                            <h3>Subcribe email</h3>
+                            
+                            <input class="form-control" placeholder="Your Email" type="type" name="Your Email">
+                            <button class="submit-btn">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="address">
+                            <h3>Contact Us</h3>
+
+                            <ul class="loca">
+                                <li>
+                                    <a href="#"><img src="static/icon/loc.png" alt="#" /></a>Kathmandu
+                                    </li>
+                                <li>
+                                    <a href="#"><img src="static/icon/email.png" alt="#" /></a>krishinepal@gmail.com</li>
+                                <li>
+                                    <a href="#"><img src="static/icon/call.png" alt="#" /></a>+9779841654321</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="copyright">
+            <div class="container">
+                <p>© 2023 All Rights Reserved.</a></p>
+           
+        </div>
+        </div>
+    </footr>
+
+   
+    
+</body>
+
+</html>

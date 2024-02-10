@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crop Percentage Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    Chart.defaults.font.size = 15;
+  </script>
+  <style>
+     @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+    @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+    * {
+     box-sizing: border-box !important;
+     transition: ease all 0.5s;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+      font-family: poppins;
+     line-height: 1.80857;
+     font-weight: normal;
+     overflow-x: hidden;
+     padding:0px;
+     margin:0px;
+     border:0px;
+}
+
+.header {
+        font-family: poppins;
+        padding: 0px 0px;
+        background: #052501;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+    
+    .logo {
+        float: left;
+        position: relative;
+        padding-top: 2px;
+        padding-left: 15px;
+        padding-bottom: 5px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+
+.col h1{
+  color:white;
+  font-weight: 500px;
+  text-align:center;
+}
+    canvas{
+width:56% !important;
+height:420px !important;
+margin:auto;
+
+
+    }
+
+    .center{
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- header inner -->
+    <div class="header" >
+      <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div >
+                      <!-- Logo section -->
+                        <div >
+                            <div class="logo">
+                                <img src="static/images/logo.png" alt="Logo" height="80px" width="80px">
+                            </div>
+
+                            <div class="loc">
+                            <h1>Crop Dashboard</h1><br>
+              
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+           
+        </div>
+    </div>
+  
+</header>
+<br>
+  <div class="center">
+  <canvas id="cropChart"></canvas>
+  </div>
+  <script>
+    // Define the data for the bar chart
+    var cropData = {
+      labels: {{ labels | tojson}},
+      datasets: [
+        {
+          label: 'Crop Percentage',
+          data: {{ values | tojson}},
+          backgroundColor: [
+            'rgba(0, 0, 255, 1)',
+            'rgba(255,0,0,1)',
+            'rgba(255, 206, 86, 0.5)',
+            'rgba(75, 192, 192, 0.5)'
+          ],
+          borderColor: [
+            'rgba(0, 0, 0, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)'
+          ],
+          
+        }
+      ]
+    };
+
+    // Define the options for the bar chart
+    var cropOptions = {
+      
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+          }
+        }] 
+        
+      }
+    };
+
+    // Create the bar chart
+    var cropChart = new Chart(document.getElementById('cropChart'), {
+      type: 'bar',
+      data: cropData
+    });
+  </script>
+</body>
+</html>
